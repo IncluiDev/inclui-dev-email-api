@@ -17,6 +17,14 @@
 ![Swagger](https://img.shields.io/badge/Swagger-0D1117?style=for-the-badge&logo=Swagger&logoColor=85EA2D&labelColor=0D1117)&nbsp;
 ![Maven](https://img.shields.io/badge/apache_maven-0D1117?style=for-the-badge&logo=apachemaven&logoColor=E34F26&labelColor=0D1117)&nbsp;
 
+#
+### CREDENCIAIS
+
+- **User**: `owner`
+- **Password**: `JLEdTDuhDrvCjpO7bMqYEZMJxlwHgd0yAED6vXbc9BL2kxv2xQ`
+
+#
+### REQUISICAO
 
 #
 ### DOMINIO DA API
