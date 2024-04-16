@@ -8,6 +8,31 @@
 ### DESCRICAO
 
 #
+### REPRESENTACAO DE FLUXO
+
+#
+### MODELAGEM DE PERSISTENCIA
+
+#
+### MODELAGEM DE CLASSES
+
+#
+### EQUIPE
+
+<table>
+  <tr>
+    <td align="center">
+      <a href="https://github.com/kaiquesouzasantos" title="Github Kaique">
+        <img src="" width="150px;" alt="Foto de Kaique Souza Santos"/><br>
+        <sub>
+          <b>Kaique Souza Santos</b>
+        </sub>
+      </a>
+    </td>
+  </tr>
+</table>
+
+#
 ### TECNOLOGIAS
 
 ![Java](https://img.shields.io/badge/Java-0D1117?style=for-the-badge&logo=openjdk&logoColor=white&labelColor=0D1117)&nbsp;
