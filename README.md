@@ -1,7 +1,7 @@
-<h1 align=center>INCLUIDEV API</h1>
+<h1 align=center>INCLUIDEV EMAIL API</h1>
 
 <p align="center">
-  <img src="pictures/banner.png" style="border-radius: 10px;">
+  <img src="pictures/banner.png" style="border-radius: 15px;">
 </p>
 
 #
