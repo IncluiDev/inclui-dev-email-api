@@ -1,7 +1,7 @@
-<h1 align=center>INCLUI+ EMAIL API</h1>
+<h1 align=center>INCLUIDEV API</h1>
 
 <p align="center">
-  <img src="logo-principal-transparente.png" width="500">
+  <img src="pictures/logo.png" width="500">
 </p>
 
 #
@@ -23,7 +23,7 @@
   <tr>
     <td align="center">
       <a href="https://github.com/kaiquesouzasantos" title="Github Kaique">
-        <img src="" width="150px;" alt="Foto de Kaique Souza Santos"/><br>
+        <img src="pictures/KAIQUE.jpeg" width="150px;" alt="Foto de Kaique Souza Santos"/><br>
         <sub>
           <b>Kaique Souza Santos</b>
         </sub>
