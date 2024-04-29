@@ -12,7 +12,7 @@ import java.util.UUID;
 @NoArgsConstructor
 @Builder
 @Entity
-@Table(name = "usuario")
+@Table(name = "usuario_newsletter")
 public class UsuarioModel implements Serializable {
     @Serial
     private static final long serialVersionUID = 1L;
@@ -20,5 +20,6 @@ public class UsuarioModel implements Serializable {
     @Id @GeneratedValue(strategy = GenerationType.AUTO)
     private UUID id;
 
+    @Column(unique = true)
     private String email;
 }

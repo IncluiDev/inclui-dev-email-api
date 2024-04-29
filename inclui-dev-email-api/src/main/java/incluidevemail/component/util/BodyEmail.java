@@ -18,13 +18,21 @@ public enum BodyEmail {
        Agradecemos mais uma vez por escolher se juntar à nossa comunidade através da assinatura de nossa newsletter. 
        Estamos ansiosos para manter uma conexão significativa e enriquecedora.<br><br>
        Seja bem-vindo(a)!
-       """);
+       """),
+    PASSWORD(
+            """
+           Olá, <br><br>
+           Esperamos que esta mensagem o encontre bem.
+           Seu codigo de recuperacao:
+           """);
+
+    private final String content;
 
     BodyEmail(String content) {
-
+        this.content = content;
     }
 
     public static String toString(BodyEmail type) {
-        return String.valueOf(type);
+        return type.content;
     }
 }

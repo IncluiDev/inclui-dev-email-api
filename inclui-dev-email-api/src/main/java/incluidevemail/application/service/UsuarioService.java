@@ -20,6 +20,8 @@ public class UsuarioService {
 
     @Transactional(rollbackFor = ExceptionGeneric.class)
     public ResponseBody save(@Valid UsuarioDto usuarioDto){
+        verifyExists(usuarioDto.getEmail());
+
         emailService.sendEmailNewUser(
                 usuarioRepository.save(
                         UsuarioMapper.toMapper(usuarioDto)
@@ -32,5 +34,10 @@ public class UsuarioService {
     @Transactional(rollbackFor = ExceptionGeneric.class)
     public void delete(@Valid UsuarioDto usuarioDto) {
         usuarioRepository.deleteByEmail(usuarioDto.getEmail());
+    }
+
+    private void verifyExists(String email) {
+        if(usuarioRepository.existsByEmail(email))
+            throw new ExceptionGeneric("USUARIO JA CADASTRADO", "O USUARIO JA ESTA PERSISITIDO EM NOSSA BASE DE DADOS", 400);
     }
 }

@@ -2,6 +2,7 @@ package incluidevemail.application.service;
 
 import incluidevemail.application.repository.UsuarioRepository;
 import incluidevemail.data.dto.EmailDto;
+import incluidevemail.data.dto.RecuperacaoSenhaDto;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.retry.annotation.Backoff;
@@ -45,11 +46,24 @@ public class EmailService {
         return getResponse("ENVIO DE NEWSLETTER CONCLUIDO", "ENVIO DE NEWSLETTER CONCLUIDO", 200);
     }
 
+    @Retryable(value = ExceptionGeneric.class, maxAttempts = 4, backoff = @Backoff(delay = 100))
+    public void sendRecuperacaoSenha(@Valid RecuperacaoSenhaDto recuperacao) {
+        emailExists.isValid(recuperacao.getEmail());
+
+        emailDependency.sendEmail(
+                new EmailDto(
+                        recuperacao.getEmail(),
+                        "IncluiDev - Recuperacao de Credenciais",
+                        BodyEmail.toString(BodyEmail.PASSWORD).concat(recuperacao.getCodigo())
+                )
+        );
+    }
+
     public void sendEmailNewUser(String email) {
         sendEmail(
                 new EmailDto(
                         email,
-                        "Inclui+ - Boas Vindas!",
+                        "IncluiDev - Boas Vindas!",
                         BodyEmail.toString(BodyEmail.NEW_USER)
                 )
         );
