@@ -25,7 +25,7 @@
       <a href="https://github.com/kaiquesouzasantos" title="Github Kaique">
         <img src="pictures/KAIQUE.jpeg" width="150px;" alt="Foto de Kaique Souza Santos"/><br>
         <sub>
-          <b>Kaique Souza Santos</b>
+          <b>Kaique</b>
         </sub>
       </a>
     </td>
