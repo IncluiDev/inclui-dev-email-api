@@ -1,14 +1,18 @@
 <h1 align=center>INCLUIDEV EMAIL API</h1>
 
-<p align="center">
+<div align="center">
   <img src="pictures/banner.png" style="border-radius: 15px;">
-</p>
+</div>
 
 #
 ### DESCRICAO
 
 #
 ### REPRESENTACAO DE FLUXO
+
+<div align="center">
+  <img src="pictures/arquitetura.png" width="700px;">
+</div>
 
 #
 ### MODELAGEM DE PERSISTENCIA
