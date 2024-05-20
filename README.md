@@ -68,3 +68,7 @@ http://localhost:8080
 ```
 http://localhost:8080/swagger-ui/index.html
 ```
+
+<p align="center">
+  <img src="https://github.com/IncluiDev/.github/blob/main/profile/pictures/rodape-readme.png" style="border-radius: 15px;">
+</p>
