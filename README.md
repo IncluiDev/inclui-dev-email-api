@@ -110,6 +110,18 @@ http://localhost:8080/swagger-ui/index.html#/
 - **User**: `owner`
 - **Password**: `JLEdTDuhDrvCjpO7bMqYEZMJxlwHgd0yAED6vXbc9BL2kxv2xQ`
 
+ou 
+```
+HTTP {
+  headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json',
+        'Access-Control-Allow-Credentials': true,
+        'Access-Control-Allow-Origin': '*',
+        "Authorization": `Basic b3duZXI6SkxFZFREdWhEcnZDanBPN2JNcVlFWk1KeGx3SGdkMHlBRUQ2dlhiYzlCTDJreHYyeFE=`
+      }
+}
+```
 #
 ### DOMINIO DA API
 
