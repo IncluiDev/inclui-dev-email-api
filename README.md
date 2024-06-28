@@ -5,20 +5,30 @@
 </div>
 
 #
-### DESCRICAO
+### OBJETIVO
+
+> Esse serviço tem como objetivo ser uma ferramenta centralizadora da comunicação via email, atuando como um módulo acoplável ao serviço principal. Seu design visa escalabilidade, desempenho e reutilização dos componentes, distribuindo o processamento necessário para garantir a conclusão eficiente das transações.
 
 #
-### REPRESENTACAO DE FLUXO
+### FUNCIONALIDADES
+
+- Implementação de Autenticação Basic para garantia de segurança e integridade das comunicações.
+- Personalização na validação e tratamento de exceções, assegurando robustez e confiabilidade no sistema.
+- Persistência dinâmica de dados para adaptação eficiente às demandas variáveis do ambiente.
+- Tratamento de transações com callback, garantindo consistência e integridade em operações críticas.
+- Implementação de um serviço de consumo de envio de e-mail modular e reutilizável, garantindo eficiência e flexibilidade na comunicação por meio de diferentes canais.
+- Normalização de dados através de Data Objects Transactions para padronização e consistência de informações.
+- Utilização do Swagger UI para uma documentação complementar detalhada e acessível.
+- Estruturação de tentativas de requisições externas sob controle para manutenção da estabilidade e disponibilidade do sistema.
+
+#
+### REPRESENTAÇÃO DE FLUXO
+
+> A representação de fluxo visa graficamente ilustrar o comportamento da aplicação em nível arquitetural, destacando os principais recursos empregados para assegurar o funcionamento eficiente do serviço.
 
 <div align="center">
   <img src="pictures/arquitetura.png" width="700px;">
 </div>
-
-#
-### MODELAGEM DE PERSISTENCIA
-
-#
-### MODELAGEM DE CLASSES
 
 #
 ### REQUISITOS
