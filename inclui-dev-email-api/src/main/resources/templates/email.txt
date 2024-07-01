@@ -3,97 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inclui+</title>
+    <title>Email IncluiDev</title>
     <style>
         body {
-            margin: 0;
-            padding: 0;
             font-family: Arial, sans-serif;
             background-color: #f4f4f4;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            margin: 0;
+            padding: 0;
         }
-
         .container {
-            width: 600px;
-            margin: 20px;
-            background-color: #ffffff;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-            border-radius: 20px;
-        }
-
-        .header {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 20px;
-        }
-
-        .company-info {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-bottom: 20px;
-            background-color: #000;
-            color: #fff;
-            text-align: center;
-            padding: 20px;
-            border-radius: 20px 20px 0 0;
-        }
-
-        .company-logo {
-            width: 80px;
-            height: 80px;
-            border-radius: 50%;
-            overflow: hidden;
-            margin-right: 20px;
-        }
-
-        .company-logo img {
             width: 100%;
-            height: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-
-        .company-name {
-            font-size: 30px;
-            font-weight: bold;
-            color: #fff;
+        .cabecalho, .rodape {
+            width: 100%;
+            height: auto;
+            display: block;
+            margin-bottom: 20px;
         }
-
-        .recovery-code {
-            text-align: center;
-            padding: 0 0 20px 0;
+        h2 {
+            color: #333333;
         }
-
-        .recovery-code h2, p, p strong {
-            color: #000;
-        }
-
-        .recovery-code p {
-            font-size: 15px;
+        p {
+            color: #666666;
+            line-height: 1.6;
             text-align: justify;
-            margin: 20px;
-        }
-
-        .recovery-code p strong {
-            font-size: 24px;
-            font-weight: bold;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="company-info">
-            <div class="company-logo">
-                <img src="https://drive.google.com/uc?export=view&amp;id=1vMsoDED6AdD5xrvZmANs36Z7HVQcUR9k" alt="Logo da Empresa">
-            </div>
-            <h1 class="company-name">Inclui+</h1>
-        </div>
-        <div class="recovery-code">
-            <h2>[TITLE]</h2>
-            <p>[BODY]</p>
-        </div>
+        <img class="cabecalho" src="https://incluidev.vercel.app/assets/inclui-dev-logo-8f11effd.png" alt="Inclui Dev Logo">
+
+        <h2>[TITLE]</h2>
+        <p>[BODY]</p>
+
+        <img class="rodape" src="https://raw.githubusercontent.com/IncluiDev/.github/main/profile/pictures/rodape-readme.png" alt="Rodape">
     </div>
 </body>
 </html>

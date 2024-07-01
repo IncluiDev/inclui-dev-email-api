@@ -12,6 +12,10 @@ import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.provisioning.InMemoryUserDetailsManager;
 import org.springframework.security.web.SecurityFilterChain;
+import org.springframework.web.cors.CorsConfiguration;
+import org.springframework.web.cors.CorsConfigurationSource;
+import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
+import java.util.Arrays;
 
 import static org.springframework.security.config.Customizer.withDefaults;
 
@@ -29,7 +33,8 @@ public class SecurityConfiguration {
                 .authorizeHttpRequests(
                         authorize ->
                                 authorize
-                                        .requestMatchers("/**").hasAnyRole("OWNER")
+                                        .requestMatchers("/**").permitAll()
+                                        //.requestMatchers("/**").hasAnyRole("OWNER")
                                         .anyRequest().authenticated()
                 )
                 .headers().frameOptions().disable().and()
@@ -44,6 +49,15 @@ public class SecurityConfiguration {
     @Bean
     WebSecurityCustomizer webSecurityCustomizer() {
         return (web) -> web.ignoring().requestMatchers("/swagger-ui/**", "/v3/api-docs/**");
+    }
+
+    @Bean
+    CorsConfigurationSource corsConfigurationSource() {
+        CorsConfiguration configuration = new CorsConfiguration().applyPermitDefaultValues();
+        configuration.setAllowedMethods(Arrays.asList("POST", "GET", "PUT", "DELETE", "OPTIONS"));
+        final UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
+        source.registerCorsConfiguration("/**", configuration);
+        return source;
     }
 
     @Bean
